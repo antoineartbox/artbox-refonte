@@ -1,10 +1,13 @@
 
 <?php
+
+// Init langage settings
+require "local-lang.php";
+
 // Require all dictionnaries
 require "dictionnaries.php";
 
-// Set langage
-$locale = $_GET["locale"];
+
 ?>
 
 <!DOCTYPE html>
