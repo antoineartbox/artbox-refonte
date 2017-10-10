@@ -18,11 +18,16 @@
     "gulp-less": "latest",
     "gulp-load-plugins": "latest",
     "gulp-rename": "latest",
+    "gulp-sourcemaps": "1.5.2",
     "gulp-sass": "latest",
     "gulp-watch": "^4.3.11"
   },
   "dependencies": {
+    "bootstrap": "3.3.1",
     "grunt-cli": "^1.2.0",
-    "gulp-concat": "^2.6.1"
+    "grunt-less": "^0.1.7",
+    "gulp-concat": "^2.6.1",
+    "gulp-css": "^0.1.0",
+    "path": "^0.12.7"
   }
 }
