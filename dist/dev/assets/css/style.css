@@ -1,6 +1,3 @@
-body {
-  background-color: #ffff07; }
-
 .message-container {
   position: absolute;
   z-index: 2;
@@ -36,3 +33,10 @@ canvas {
 
 .credit i {
   color: black; }
+
+footer .credit a:hover {
+  margin-bottom: 15px; }
+
+footer .credit a i {
+  font-size: 25px;
+  padding-left: 10px; }

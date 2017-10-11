@@ -1,3 +1,10 @@
+<div id="menu">
+    <nav>
+        <ul>
+
+        </ul>
+    </nav>
+</div>
 
 <div id="menu" style="display: block;">
     <a href="" onclick="closeMenu">x</a>

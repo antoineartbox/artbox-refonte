@@ -1,0 +1,13 @@
+footer {
+    .credit {
+        a {
+            &:hover {
+                margin-bottom: 15px;
+            }
+            i {
+                font-size:25px;
+                padding-left: 10px;
+            }
+        }
+    }
+}
