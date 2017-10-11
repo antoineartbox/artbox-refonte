@@ -31,7 +31,7 @@ require "dictionnaries.php";
             <?php require "site-parts/header/header.php"; ?>
         </header>
         <main>
-            <?php /*require "site-parts/front-page/front-page.php"; */?>
+            <?php require "site-parts/front-page/front-page.php";?>
         </main>
         <footer>
             <?php require "site-parts/footer/footer.php" ?>
