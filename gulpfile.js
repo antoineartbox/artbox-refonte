@@ -14,8 +14,8 @@ var source = './src'; // dossier de travail
 var destination = './dist'; // dossier à livrer
 var destinationDev = './dist/dev'; // dossier à pour l'envrionnement de developpement
 
+// Define task
 gulp.task('sass', function () {
-
     return gulp.src(source + '/assets/css/sass/booter.scss')
         .pipe(plugins.sass())
         .pipe(concat('style.css')) // Concatenate to single file
@@ -31,4 +31,18 @@ gulp.task('minify', function () {
       suffix: '.min'
     }))
     .pipe(gulp.dest(destination + '/assets/css/'));
+});
+
+// Tâche "build"
+gulp.task('build', ['sass']);
+
+// Tâche "prod" = Build + minify
+gulp.task('prod', ['build',  'minify']);
+
+// Tâche par défaut
+gulp.task('default', ['build']);
+
+// Tâche "watch" = je surveille *less
+gulp.task('watch', function () {
+  gulp.watch(source + '/assets/css/**/*.scss', ['build']);
 });

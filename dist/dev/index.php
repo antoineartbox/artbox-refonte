@@ -39,8 +39,9 @@ require "dictionnaries.php";
         </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Require our Js -->
         <script type="text/javascript" src="assets/js/canvas.js"></script>
-        <!-- Require for Canvas -->
+        <script type="text/javascript" src="assets/js/main-ux-ui.js"></script>
 
     </body>
 </html>

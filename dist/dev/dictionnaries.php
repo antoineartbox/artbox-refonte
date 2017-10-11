@@ -9,7 +9,7 @@ $general_infos["site_title"]["en"] = "Social Marketting";
 $menu = array();
 // French menu
 $menu["items"]["fr"]['Service'] = "services.php";
-$menu["items"]["fr"]['Service'] = "projects.php";
+$menu["items"]["fr"]['Project'] = "projects.php";
 $menu["items"]["fr"]['Service'] = "about.php";
 $menu["items"]["fr"]['Service'] = "contact.php";
 $menu["items"]["fr"]['Service'] = "home.php";

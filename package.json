@@ -11,15 +11,15 @@
   "devDependencies": {
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
-    "gulp-cssbeautify": "latest",
     "gulp-concat": "latest",
+    "gulp-cssbeautify": "latest",
     "gulp-csscomb": "latest",
     "gulp-csso": "latest",
     "gulp-less": "latest",
     "gulp-load-plugins": "latest",
     "gulp-rename": "latest",
-    "gulp-sourcemaps": "1.5.2",
     "gulp-sass": "latest",
+    "gulp-sourcemaps": "1.5.2",
     "gulp-watch": "^4.3.11"
   },
   "dependencies": {
