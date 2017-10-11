@@ -6,10 +6,12 @@ $(document).ready(function() {
     // Handle menu display
     $(".menu-hamburger").click(function() {
         $("#menu").removeClass("kill-menu-display").addClass("active-menu-display");
+
     });
 
     $(".close-button").click(function() {
-        console.log("kill-menu");
+
+        $("#menu").removeClass("active-menu-display").addClass("kill-menu-display");
     });
 
     // Handle menu hover

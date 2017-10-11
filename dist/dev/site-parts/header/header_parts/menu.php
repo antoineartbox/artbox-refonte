@@ -8,10 +8,9 @@
         <span class="close-button">x</span>
         <nav>
             <ul>
-                <li><a href="">Services<div class="line-overlay"></div></a></li>
-                <li><a href="">Projets<div class="line-overlay"></div></a></li>
-                <li><a href="">À Propos<div class="line-overlay"></div></a></li>
-                <li><a href="">Contact<div class="line-overlay"></div></a></li>
+                <?php foreach($menu["items"][$locale] as $menu_title => $link) {?>
+                    <li><a href="<?= $link ?>"><?= $menu_title ?><div class="line-overlay"></div></a></li>
+                <?php } ?>
             </ul>
         </nav>
     </div>

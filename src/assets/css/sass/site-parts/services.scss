@@ -1,0 +1,29 @@
+body.services  {
+    background-color: $mainYellow;
+    font-family:$main-font;
+
+    main {
+        padding-top: 75px;
+        padding-left:5% ;
+        padding-right: 5%;
+        h2 {
+            margin-top: 0px;
+        }
+        p {
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .infos-box-container {
+            .word-container {
+                display: inline-block;
+                margin-right:45px;
+                h3 {
+                    border: solid black 5px;
+                    font-size:36px;
+                    padding:25px;
+                }
+            }
+        }
+    }
+}

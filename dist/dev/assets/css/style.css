@@ -58,7 +58,7 @@ canvas {
       position: absolute;
       right: 0px;
       top: 0px;
-      background-color: #ffff00;
+      background-color: white;
       height: 100vh;
       width: 350px;
       z-index: 55;
@@ -93,3 +93,23 @@ footer .credit a:hover {
 footer .credit a i {
   font-size: 25px;
   padding-left: 10px; }
+
+body.services {
+  background-color: #ffff00;
+  font-family: "Arial", Helvetica, sans-serif; }
+  body.services main {
+    padding-top: 75px;
+    padding-left: 5%;
+    padding-right: 5%; }
+    body.services main h2 {
+      margin-top: 0px; }
+    body.services main p {
+      font-weight: bold;
+      font-size: 22px; }
+    body.services main .infos-box-container .word-container {
+      display: inline-block;
+      margin-right: 45px; }
+      body.services main .infos-box-container .word-container h3 {
+        border: solid black 5px;
+        font-size: 36px;
+        padding: 25px; }
