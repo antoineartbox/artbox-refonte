@@ -34,38 +34,58 @@ canvas {
 .credit i {
   color: black; }
 
-#menu {
-  position: absolute;
-  right: 0px;
+#menu-container {
+  position: relative;
+  z-index: 50;
   top: 0px;
-  background-color: #ffff00;
-  height: 100vh;
-  width: 350px;
-  z-index: 55;
-  border-left: solid black 3px; }
-  #menu .close-button {
-    position: absolute;
-    right: 15px;
-    font-size: 35px; }
-  #menu nav {
-    padding-top: 80px; }
-    #menu nav ul {
-      list-style: none; }
-      #menu nav ul li {
-        width: 200px;
-        font-size: 38px;
-        text-align: center; }
-        #menu nav ul li a {
-          color: black; }
-          #menu nav ul li a:hover, #menu nav ul li a:active {
-            text-decoration: none; }
-          #menu nav ul li a .line-overlay {
-            transition: width 0.85s;
-            width: 0px; }
-            #menu nav ul li a .line-overlay.active {
-              width: 150px;
-              border: solid black 1px;
-              margin: 0 auto; }
+  right: 0px; }
+  #menu-container .menu-hamburger {
+    right: 25px;
+    position: absolute; }
+    #menu-container .menu-hamburger .slice1,
+    #menu-container .menu-hamburger .slice2,
+    #menu-container .menu-hamburger .slice3 {
+      padding-bottom: 8px;
+      width: 35px;
+      border-bottom: solid 3px black; }
+  #menu-container #menu {
+    overflow: hidden;
+    position: absolute; }
+    #menu-container #menu.kill-menu-display {
+      width: 0px; }
+    #menu-container #menu.active-menu-display {
+      transition: all 0.5s;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      background-color: #ffff00;
+      height: 100vh;
+      width: 350px;
+      z-index: 55;
+      border-left: solid black 3px; }
+    #menu-container #menu .close-button {
+      position: absolute;
+      right: 15px;
+      font-size: 35px; }
+    #menu-container #menu nav {
+      padding-top: 80px; }
+      #menu-container #menu nav ul {
+        list-style: none; }
+        #menu-container #menu nav ul li {
+          width: 200px;
+          font-size: 38px;
+          text-align: center; }
+          #menu-container #menu nav ul li a {
+            color: black; }
+            #menu-container #menu nav ul li a:hover, #menu-container #menu nav ul li a:active {
+              text-decoration: none; }
+            #menu-container #menu nav ul li a .line-overlay {
+              transition: width 0.85s;
+              width: 0px; }
+              #menu-container #menu nav ul li a .line-overlay.active {
+                width: 150px;
+                border: solid black 1px;
+                margin: 0 auto; }
 
 footer .credit a:hover {
   margin-bottom: 15px; }
