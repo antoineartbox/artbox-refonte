@@ -1,0 +1,46 @@
+body.about {
+    background-color: $mainYellow;
+    #team-members-container {
+        .single-member {
+
+            .image-member {
+                position: relative;
+                width: 251px;
+                height: 250px;
+                bottom: -20px;
+                display: inline-block;
+                background-color: rgba(0,0,0,0.95);
+                img {
+                    position: absolute;
+                    opacity:0.35;
+                    width:250px;
+                    border-radius: 100%;
+                    transition:all 0.5s;
+                    &:hover {
+                        opacity: 1;
+                        border-radius: 0%;
+                    }
+
+                }
+                .member-name {
+                    position: absolute;
+                    text-align: center;
+                    background-color: black;
+                    color: yellow;
+                    transition: margin-top 0.5s;
+                    &.active-name {
+                        text-align: center;
+                        background-color: black;
+                        color: yellow;
+                        margin-top:-20px;
+                    }
+                }
+            }
+            .member-name {
+                h4 {
+
+                }
+            }
+        }
+    }
+}

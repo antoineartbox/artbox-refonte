@@ -46,4 +46,13 @@ $(document).ready(function() {
         position += 100;
     }
 
+
+    // Handle all profile image name display
+    $(".image-member").mouseover(function() {
+        $(this).find(".member-name").addClass("active-name");
+        $(this).mouseleave(function() {
+            $(this).find(".member-name").removeClass("active-name");
+        });
+    });
+
 });
