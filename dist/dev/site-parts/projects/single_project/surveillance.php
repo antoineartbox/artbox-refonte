@@ -19,8 +19,8 @@ require "../../../dictionnaries.php";
 
         <header>
             <div id="single-project-info">
-                <h3><?= $colors["complete_project"]["title"]["$locale"]  ?></h3>
-                <p class="single-project-description"><?= $colors["complete_project"]["description"][$locale];  ?></p>
+                <h3><?= $surveillance["complete_project"]["title"]["$locale"]  ?></h3>
+                <p class="single-project-description"><?= $surveillance["complete_project"]["description"][$locale];  ?></p>
             </div>
         </header>
         <main>
