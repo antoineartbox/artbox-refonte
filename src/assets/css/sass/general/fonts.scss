@@ -1,1 +1,12 @@
 $main-font : 'Arial', Helvetica, sans-serif;
+@mixin font-page-title() {
+    font-size:48px;
+    text-transform: uppercase;
+}
+
+
+@mixin font-page-content() {
+
+    font-weight: bold;
+    font-size: 22px;
+}

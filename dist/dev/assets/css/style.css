@@ -87,12 +87,14 @@ canvas {
                 border: solid black 1px;
                 margin: 0 auto; }
 
-footer .credit a:hover {
-  margin-bottom: 15px; }
-
-footer .credit a i {
-  font-size: 25px;
-  padding-left: 10px; }
+footer .credit {
+  padding-top: 25px;
+  background-color: #ffff00; }
+  footer .credit a:hover {
+    margin-bottom: 15px; }
+  footer .credit a i {
+    font-size: 25px;
+    padding-left: 10px; }
 
 body.services {
   background-color: #ffff00;
@@ -102,13 +104,16 @@ body.services {
     padding-left: 5%;
     padding-right: 5%; }
     body.services main h2 {
-      margin-top: 0px; }
+      font-size: 48px;
+      text-transform: uppercase; }
     body.services main p {
       font-weight: bold;
       font-size: 22px; }
+    body.services main .infos-box-container .sign {
+      font-size: 36px;
+      padding: 0px 50px; }
     body.services main .infos-box-container .word-container {
-      display: inline-block;
-      margin-right: 45px; }
+      display: inline-block; }
       body.services main .infos-box-container .word-container h3 {
         border: solid black 5px;
         font-size: 36px;

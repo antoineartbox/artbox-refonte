@@ -42,7 +42,7 @@ gulp.task('prod', ['build',  'minify']);
 // Tâche par défaut
 gulp.task('default', ['build']);
 
-// Tâche "watch" = je surveille *less
+// Watch 
 gulp.task('watch', function () {
   gulp.watch(source + '/assets/css/**/*.scss', ['build']);
 });

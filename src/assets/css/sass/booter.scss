@@ -1,3 +1,6 @@
+// Import core sass files
+@import "core/mixin.scss";
+
 // Import general sass files
 @import "general/colors.scss";
 @import "general/fonts.scss";
@@ -6,6 +9,4 @@
 @import "site-parts/front-page.scss";
 @import "site-parts/menu.scss";
 @import "site-parts/footer.scss";
-
-
 @import "site-parts/services.scss";

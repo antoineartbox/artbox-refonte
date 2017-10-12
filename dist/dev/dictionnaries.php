@@ -44,6 +44,10 @@ $services["services_box"]["en"]["word_box2"] = "Driving force";
 $services["services_box"]["en"]["word_box3"] = "Collaboration";
 
 
+// Projects dictionnaries
+$projects = array();
+$projects["couleurs"]["title"]["en"] = ""
+$projects["couleurs"]["title"]["fr"] = ""
 
 
 $main_page = array();

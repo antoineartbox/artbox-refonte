@@ -1,3 +1,6 @@
+// Include all related files
+@import "../general/fonts.scss";
+
 body.services  {
     background-color: $mainYellow;
     font-family:$main-font;
@@ -7,17 +10,20 @@ body.services  {
         padding-left:5% ;
         padding-right: 5%;
         h2 {
-            margin-top: 0px;
+            @include font-page-title;
         }
         p {
-            font-weight: bold;
-            font-size: 22px;
+            @include font-page-content;
         }
 
         .infos-box-container {
+            .sign {
+                font-size: 36px;
+                padding:0px 50px;
+            }
             .word-container {
                 display: inline-block;
-                margin-right:45px;
+
                 h3 {
                     border: solid black 5px;
                     font-size:36px;
