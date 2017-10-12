@@ -108,10 +108,10 @@ $surveillance["thumbnail"]["thumbnail-image-url"]["en"] = "assets/images/project
 $surveillance["thumbnail"]["thumbnail-image-url"]["fr"] = "assets/images/projects/surveillance_cover.jpg";
 
 
-$sidim["complete_project"]["title"]["en"] =  "Surveillance | Bromont, montagne d’expériences + Larose";
-$sidim["complete_project"]["title"]["fr"] =  "Surveillance | Bromont, montagne d’expériences + Larose";
-$sidim["complete_project"]["description"]["en"] = "Surveillance est une installation lumineuse interactive sur neige de l’artiste Larose en collaboration avec Bromont, montagne d’expériences, dans laquelle les skieurs sont suivis par des faisceaux lumineux grâce à un système capable de capter leur mouvement en temps réel.";
-$sidim["complete_project"]["description"]["fr"] = "Surveillance est une installation lumineuse interactive sur neige de l’artiste Larose en collaboration avec Bromont, montagne d’expériences, dans laquelle les skieurs sont suivis par des faisceaux lumineux grâce à un système capable de capter leur mouvement en temps réel.";
+$surveillance["complete_project"]["title"]["en"] =  "Surveillance | Bromont, montagne d’expériences + Larose";
+$surveillance["complete_project"]["title"]["fr"] =  "Surveillance | Bromont, montagne d’expériences + Larose";
+$surveillance["complete_project"]["description"]["en"] = "Surveillance est une installation lumineuse interactive sur neige de l’artiste Larose en collaboration avec Bromont, montagne d’expériences, dans laquelle les skieurs sont suivis par des faisceaux lumineux grâce à un système capable de capter leur mouvement en temps réel.";
+$surveillance["complete_project"]["description"]["fr"] = "Surveillance est une installation lumineuse interactive sur neige de l’artiste Larose en collaboration avec Bromont, montagne d’expériences, dans laquelle les skieurs sont suivis par des faisceaux lumineux grâce à un système capable de capter leur mouvement en temps réel.";
 
 
 // Define single projects
