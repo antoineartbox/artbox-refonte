@@ -1,0 +1,8 @@
+/*This file mixins for helping centering, disposing and placing elements*/
+
+@mixin wrap-all-childs() {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

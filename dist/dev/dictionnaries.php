@@ -46,9 +46,90 @@ $services["services_box"]["en"]["word_box3"] = "Collaboration";
 
 // Projects dictionnaries
 $projects = array();
-$projects["couleurs"]["title"]["en"] = ""
-$projects["couleurs"]["title"]["fr"] = ""
+$projects["main_page"]["title"]["en"] = "Our projects";
+$projects["main_page"]["title"]["fr"] = "Nos projets";
 
+// Defining single projects
+$projects["single_projects"] = array();
+
+// Define single projects color
+$colors = array();
+$colors["thumbnail"]["title"]["en"] = "Colors | Longeuil city and Larose";
+$colors["thumbnail"]["title"]["fr"] = "Couleurs | Ville de Longeuil";
+$colors["thumbnail"]["more-infos-link"]["en"] = "site-parts/projects/single_project/couleurs.php";
+$colors["thumbnail"]["more-infos-link"]["fr"] = "site-parts/projects/single_project/couleurs.php";
+$colors["thumbnail"]["thumbnail-image-url"]["en"] = "assets/images/projects/colors.jpg";
+$colors["thumbnail"]["thumbnail-image-url"]["fr"] = "assets/images/projects/colors.jpg";
+
+$colors["complete_project"]["title"]["en"] = "Colors | Longeuil City + LAROSE";
+$colors["complete_project"]["title"]["fr"] = "Couleurs | Ville de Longeuil and Larose";
+$colors["complete_project"]["description"]["en"] = "Color is a representation of the colors of the ....";
+$colors["complete_project"]["description"]["fr"] = "Couleurs se veut une représentation des couleurs de la Ville de Longueuil : sa diversité culturelle, son ouverture envers les citoyens et sa modernité.";
+
+// Define single projects bridge
+$bridge = array();
+$bridge["thumbnail"]["title"]["en"] = "Bridge | Hôtel Renaissance + 8day";
+$bridge["thumbnail"]["title"]["fr"] = "Bridge | Hotel Renaissance + 8day";
+$bridge["thumbnail"]["more-infos-link"]["en"] = "site-parts/projects/single_project/bridge.php";
+$bridge["thumbnail"]["more-infos-link"]["fr"] = "site-parts/projects/single_project/bridge.php";
+$bridge["thumbnail"]["thumbnail-image-url"]["en"] = "assets/images/projects/bridge.png";
+$bridge["thumbnail"]["thumbnail-image-url"]["fr"] = "assets/images/projects/bridge.png";
+
+
+$bridge["complete_project"]["title"]["en"] = "Bridge | Rennaissance Hotel + 8Day";
+$bridge["complete_project"]["title"]["fr"] = "Bridge | Hôtel Rennaissance + 8Day";
+$bridge["complete_project"]["description"]["en"] = "Bridge est une performance connectée de deux DJs du Collectif 8day présentée par l’hôtel Renaissance Montréal Centre-Ville qui met en lumière l’illumination du pont Jacques-Cartier. Le nom représente le pont entre les deux DJs qui sont réunis en une seule performance grâce à la technologie et est aussi un clin d’oeil à l’illumination du pont, projet phare des festivités entourant le 375e anniversaire de Montréal.";
+$bridge["complete_project"]["description"]["fr"] = "Bridge est une performance connectée de deux DJs du Collectif 8day présentée par l’hôtel Renaissance Montréal Centre-Ville qui met en lumière l’illumination du pont Jacques-Cartier. Le nom représente le pont entre les deux DJs qui sont réunis en une seule performance grâce à la technologie et est aussi un clin d’oeil à l’illumination du pont, projet phare des festivités entourant le 375e anniversaire de Montréal.";
+
+
+// Define single projects sidim
+$sidim = array();
+$sidim["thumbnail"]["title"]["en"] = "Montreal Design Show| Electrimat + Larose";
+$sidim["thumbnail"]["title"]["fr"] = "Salon du Design Montreal | Électrimat + Larose";
+$sidim["thumbnail"]["more-infos-link"]["en"] = "site-parts/projects/single_project/sidim.php";
+$sidim["thumbnail"]["more-infos-link"]["fr"] = "site-parts/projects/single_project/sidim.php";
+$sidim["thumbnail"]["thumbnail-image-url"]["en"] = "assets/images/projects/sidim.jpg";
+$sidim["thumbnail"]["thumbnail-image-url"]["fr"] = "assets/images/projects/sidim.jpg";
+
+
+$sidim["complete_project"]["title"]["en"] = "SALON DU DESIGN DE MONTRÉAL | ÉLECTRIMAT + LAROSE";
+$sidim["complete_project"]["title"]["fr"] = "SALON DU DESIGN DE MONTRÉAL | ÉLECTRIMAT + LAROSE";
+$sidim["complete_project"]["description"]["en"] = "Une installation visuelle performative dans laquelle les luminaires du kiosque d’Électrimat réagissent directement à la performance musicale de l’artiste et à sa version automatisée.";
+$sidim["complete_project"]["description"]["fr"] = "Une installation visuelle performative dans laquelle les luminaires du kiosque d’Électrimat réagissent directement à la performance musicale de l’artiste et à sa version automatisée.";
+
+
+// Define single projects
+$surveillance = array();
+$surveillance["thumbnail"]["title"]["en"] = "Surveillance | Bromont, montagne d’expériences + Larose";
+$surveillance["thumbnail"]["title"]["fr"] = "Surveillance | Bromont, montagne d’expériences + Larose";
+$surveillance["thumbnail"]["more-infos-link"]["en"] = "site-parts/projects/single_project/surveillance.php";
+$surveillance["thumbnail"]["more-infos-link"]["fr"] = "site-parts/projects/single_project/surveillance.php";
+$surveillance["thumbnail"]["thumbnail-image-url"]["en"] = "assets/images/projects/surveillance_cover.jpg";
+$surveillance["thumbnail"]["thumbnail-image-url"]["fr"] = "assets/images/projects/surveillance_cover.jpg";
+
+
+$sidim["complete_project"]["title"]["en"] =  "Surveillance | Bromont, montagne d’expériences + Larose";
+$sidim["complete_project"]["title"]["fr"] =  "Surveillance | Bromont, montagne d’expériences + Larose";
+$sidim["complete_project"]["description"]["en"] = "Surveillance est une installation lumineuse interactive sur neige de l’artiste Larose en collaboration avec Bromont, montagne d’expériences, dans laquelle les skieurs sont suivis par des faisceaux lumineux grâce à un système capable de capter leur mouvement en temps réel.";
+$sidim["complete_project"]["description"]["fr"] = "Surveillance est une installation lumineuse interactive sur neige de l’artiste Larose en collaboration avec Bromont, montagne d’expériences, dans laquelle les skieurs sont suivis par des faisceaux lumineux grâce à un système capable de capter leur mouvement en temps réel.";
+
+
+// Define single projects
+$synergy = array();
+$synergy["thumbnail"]["title"]["en"] = "Synergy | Nanoleaf + Larose";
+$synergy["thumbnail"]["title"]["fr"] = "Synergy | Nanoleaf + Larose";
+$synergy["thumbnail"]["more-infos-link"]["en"] = "site-parts/projects/single_project/synergy.php";
+$synergy["thumbnail"]["more-infos-link"]["fr"] = "site-parts/projects/single_project/synergy.php";
+$synergy["thumbnail"]["thumbnail-image-url"]["en"] = "assets/images/projects/synergy_cover.png";
+$synergy["thumbnail"]["thumbnail-image-url"]["fr"] = "assets/images/projects/synergy_cover.png";
+
+
+// Then push it to projects["single_projects"]
+$projects["single_projects"][] = $colors;
+$projects["single_projects"][] = $bridge;
+$projects["single_projects"][] = $sidim;
+$projects["single_projects"][] = $surveillance;
+$projects["single_projects"][] = $synergy;
 
 $main_page = array();
 $main_page["liner"]["fr"] = "Une agence de marketing social pour des pratiques marketing responsables";

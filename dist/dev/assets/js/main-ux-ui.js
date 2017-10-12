@@ -26,4 +26,24 @@ $(document).ready(function() {
     });
 
 
+    // Handle project for left-right handling
+
+    // Get all projects infos children from parent container
+    var allProjectsInfos = $("#project-infos-container .project-infos");
+
+    // Init a new position
+    var position = 150;
+
+    // loops through all child
+    for (var i = 0; i < allProjectsInfos.length; i++) {
+
+        // Set position = to position
+        $(allProjectsInfos[i]).css({
+            "top" : position + "px"
+        });
+
+        // Increment position
+        position += 100;
+    }
+
 });

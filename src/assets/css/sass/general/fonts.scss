@@ -4,6 +4,11 @@ $main-font : 'Arial', Helvetica, sans-serif;
     text-transform: uppercase;
 }
 
+@mixin font-page-medium-content() {
+
+    font-weight: bold;
+    font-size: 36px;
+}
 
 @mixin font-page-content() {
 
