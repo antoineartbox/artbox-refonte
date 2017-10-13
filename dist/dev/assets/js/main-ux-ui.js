@@ -31,8 +31,8 @@ $(document).ready(function() {
     // Get all projects infos children from parent container
     var allProjectsInfos = $("#project-infos-container .project-infos");
 
-    // Init a new position
-    var position = 150;
+    // Init a new position to 1 / 3 of window height
+    var position = window.innerHeight / 3;
 
     // loops through all child
     for (var i = 0; i < allProjectsInfos.length; i++) {
@@ -45,6 +45,18 @@ $(document).ready(function() {
         // Increment position
         position += 100;
     }
+
+    // Kill video display in in mobile
+    if (window.innerWidth < 550) {
+        $("iframe").remove();
+    }
+
+    // Check for resize and kill display
+    $( window ).resize(function() {
+        if (window.innerWidth < 550) {
+            $("iframe").remove();
+        }
+    });
 
 
     // Handle all profile image name display

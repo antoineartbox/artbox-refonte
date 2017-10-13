@@ -69,6 +69,6 @@ require "../../../dictionnaries.php";
 
         <!-- Require our JS from root -->
         <script type="text/javascript" src="../../../assets/js/main-ux-ui.js"></script>
-
+        <script type="text/javascript" src="../../../assets/js/mobile-related.js"></script>
     </body>
 </html>

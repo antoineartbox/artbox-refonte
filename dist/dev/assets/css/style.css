@@ -144,6 +144,9 @@ body.projects {
 
 body.single-project {
   overflow: hidden; }
+  @media screen and (max-width: 480px) {
+    body.single-project {
+      overflow: auto; } }
   body.single-project header {
     background-color: #ffff00;
     color: black; }
@@ -152,6 +155,8 @@ body.single-project {
       text-transform: uppercase;
       margin: 0; }
     body.single-project header .single-project-description {
+      margin-bottom: 0px;
+      width: 100%;
       font-weight: bold;
       font-size: 22px; }
   body.single-project #project-infos-container p {
@@ -168,12 +173,23 @@ body.single-project {
     transition: all 2s;
     font-weight: bold;
     font-size: 22px; }
+    @media screen and (max-width: 480px) {
+      body.single-project #project-infos-container .project-infos.left {
+        background-color: #ffff00;
+        display: block;
+        position: initial; } }
     body.single-project #project-infos-container .project-infos.left h4 {
       width: 200px;
       text-align: center;
       float: right;
       font-weight: bold;
       font-size: 36px; }
+      @media screen and (max-width: 480px) {
+        body.single-project #project-infos-container .project-infos.left h4 {
+          background-color: #ffff00;
+          display: block;
+          position: initial;
+          float: clear; } }
   body.single-project #project-infos-container .project-infos.left:hover {
     left: 0%;
     background-color: yellow; }
@@ -187,6 +203,11 @@ body.single-project {
     transition: all 2s;
     font-weight: bold;
     font-size: 22px; }
+    @media screen and (max-width: 480px) {
+      body.single-project #project-infos-container .project-infos.right {
+        background-color: #ffff00;
+        display: block;
+        position: initial; } }
     body.single-project #project-infos-container .project-infos.right h4 {
       float: left;
       font-weight: bold;
@@ -235,27 +256,16 @@ body.single-project {
     border-bottom: none;
     margin: 1rem auto;
     text-align: center; }
-  @media (min-aspect-ratio: 16 / 9) {
-    body.single-project .video-foreground {
-      height: 300%;
-      top: -100%; } }
-  @media (max-aspect-ratio: 16 / 9) {
-    body.single-project .video-foreground {
-      width: 300%;
-      left: -100%; } }
-  @media all and (max-width: 600px) {
-    body.single-project .vid-info {
-      width: 50%;
-      padding: .5rem; }
-    body.single-project .vid-info h1 {
-      margin-bottom: .2rem; } }
-  @media all and (max-width: 500px) {
-    body.single-project .vid-info .acronym {
-      display: none; } }
 
 /*This file mixins for helping centering, disposing and placing elements*/
 body.about {
   background-color: #ffff00; }
+  body.about header .about-header {
+    font-size: 48px;
+    text-transform: uppercase; }
+  body.about header .header-description {
+    font-weight: bold;
+    font-size: 36px; }
   body.about #team-members-container {
     display: flex;
     justify-content: center;
