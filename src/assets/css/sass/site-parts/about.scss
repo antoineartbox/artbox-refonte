@@ -1,18 +1,32 @@
+@import "../core/grid-mapping.scss";
+@import "../general/fonts.scss";
 body.about {
     background-color: $mainYellow;
+    header {
+        .about-header {
+            @include font-page-title;
+        }
+        .header-description {
+            @include font-page-medium-content;
+        }
+    }
     #team-members-container {
+        @include wrap-all-childs;
         .single-member {
-
+            margin-right: 40px;
             .image-member {
                 position: relative;
-                width: 251px;
+                width: 250px;
                 height: 250px;
                 bottom: -20px;
                 display: inline-block;
                 background-color: rgba(0,0,0,0.95);
+                border-radius: 100%;
                 img {
                     position: absolute;
+                    z-index: 3;
                     opacity:0.35;
+                    height: 250px;
                     width:250px;
                     border-radius: 100%;
                     transition:all 0.5s;
@@ -26,9 +40,17 @@ body.about {
                     position: absolute;
                     text-align: center;
                     background-color: black;
+                    height:0px;
                     color: yellow;
-                    transition: margin-top 0.5s;
+                    opacity: 0;
+                    width: 0px;
+                    // Bug on the transition needs to specify all properties independently
+                    transition:  all 0.5s;
+                    bottom: -40px;
                     &.active-name {
+                        width: 250px;
+                        height:30px;
+                        opacity: 1;
                         text-align: center;
                         background-color: black;
                         color: yellow;
@@ -36,9 +58,48 @@ body.about {
                     }
                 }
             }
-            .member-name {
-                h4 {
+            .infos-member {
+                margin-top: 45px;
+                /* General */
+                ul {
+                    list-style: none;
+                }
+                .member-position {
 
+                }
+
+                .member-contact-infos {
+                    padding-left: 0;
+                    .phone {
+
+                    }
+                    .email {
+
+                    }
+                }
+                .social-networks {
+                    width: 250px;
+                    height: 100px;
+                    text-align: center;
+                    .member-social-network-list {
+                        display: inline-block;
+                        padding-left: 0px;
+                        li  {
+                            padding:0 5px;
+                            text-align: center;
+                            display: inline-block;
+                            float: left;
+                            img {
+                                transition: all 0.5s;
+                            }
+                        }
+                        li:hover {
+                            img {
+                                border: solid white 4px;
+                                border-radius:100%;
+                            }
+                        }
+                    }
                 }
             }
         }

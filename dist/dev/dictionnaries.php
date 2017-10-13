@@ -131,9 +131,159 @@ $projects["single_projects"][] = $sidim;
 $projects["single_projects"][] = $surveillance;
 $projects["single_projects"][] = $synergy;
 
+// Define contact
+$contact["title"]["en"] = "Our mission";
+$contact["title"]["fr"] = "Notre mission";
+$contact["description"]["en"] = "Artbox is born for filling social needs of our society. We maximize social impact on each of our clients by changing marketing practices in order to create synergistic socialism from within our community";
+$contact["description"]["fr"] = "ARTBOX est né en réponse à la réalité des besoins sociaux de notre société. Nous maximisons l'impact social de chacun de nos clients en changeant leurs pratiques marketing afin de créer une synergie sociale au sein de notre communauté.";
+$contact["slogan"]["en"] = "Everybody wins";
+$contact["slogan"]["fr"] = "Tout le monde y gagne";
+// Defining members array
+$contact["members"] = array();
+
+// Defining single member
+$kath["name"]["en"] = "Katherine Lachance";
+$kath["name"]["fr"] = "Katherine Lachance";
+$kath["title"]["en"] = "Ceo and Co-founder";
+$kath["title"]["fr"] = "PDG et Cofondatrice";
+$kath["image"]["url"] = "assets/images/profile/katherine-lachance-ceo-art-box.jpg";
+
+$kath["infos"] = array();
+$kath["infos"]["phone"] = "+1 (438) 399-9544";
+$kath["infos"]["email"] = "katherine@artbox.agency";
+
+$kath["network"] = array();
+$kath["facebook"] = "www.facebook.com";
+$kath["linkedin"] = "www.linkedin.com";
+$kath["twitter"] = "www.twitter.com";
+$kath["instagram"] = "www.facebook.com";
+
+
+// Defining single member
+$phil["name"]["en"] = "Philippe Larose Cadieux";
+$phil["name"]["fr"] = "Philippe Larose Cadieux";
+$phil["title"]["fr"] = "Directeur Dréatif et Co-Fondateur";
+$phil["title"]["en"] = "Creative Director et Co-Founder";
+$phil["image"]["url"] = "assets/images/profile/philippe.jpg";
+
+$phil["infos"] = array();
+$phil["infos"]["phone"] = "+1 (514) 887-4704";
+$phil["infos"]["email"] = "philippe@artbox.agency";
+
+$phil["network"] = array();
+$phil["facebook"] = "www.facebook.com";
+$phil["linkedin"] = "www.linkedin.com";
+$phil["twitter"] = "www.twitter.com";
+$phil["instagram"] = "www.facebook.com";
+
+
+// Defining single member
+$julie["name"]["en"] = "Julie Masse";
+$julie["name"]["fr"] = "Julie Masse";
+$julie["title"]["fr"] = "Stratège numérique";
+$julie["title"]["en"] = "Digital strategy";
+$julie["image"]["url"] = "assets/images/profile/julie.png";
+
+$julie["infos"] = array();
+$julie["infos"]["phone"] = "+1 (438) 883-3568";
+$julie["infos"]["email"] = "julie.masse@artbox.agency";
+
+$julie["network"] = array();
+$julie["facebook"] = "www.facebook.com";
+$julie["linkedin"] = "www.linkedin.com";
+$julie["twitter"] = "www.twitter.com";
+$julie["instagram"] = "www.facebook.com";
+
+
+// Defining single member
+$catherine["name"]["en"] = "Catherine Laroche";
+$catherine["name"]["fr"] = "Catherine Laroche";
+$catherine["title"]["en"] = "Public Relations";
+$catherine["title"]["fr"] = "Coordonatrice Relations Publiques";
+$catherine["image"]["url"] = "assets/images/profile/catherine.png";
+
+$catherine["infos"] = array();
+$catherine["infos"]["phone"] = "+1 (514) 442-9934";
+$catherine["infos"]["email"] = "catherine.laroche@artbox.agency";
+
+$catherine["network"] = array();
+$catherine["facebook"] = "www.facebook.com";
+$catherine["linkedin"] = "www.linkedin.com";
+$catherine["twitter"] = "www.twitter.com";
+$catherine["instagram"] = "www.facebook.com";
+
+
+// Defining single member
+$julien["name"]["en"] = "Julien Collet";
+$julien["name"]["fr"] = "Julien Collet";
+$julien["title"]["en"] = "Business Development";
+$julien["title"]["fr"] = "Représentant, Développement des Affaires";
+$julien["image"]["url"] = "assets/images/profile/julien.png";
+
+$julien["infos"] = array();
+$julien["infos"]["phone"] = "+1 (514) 475-4136 ";
+$julien["infos"]["email"] = "julien.collet@artbox.agency";
+
+$julien["network"] = array();
+$julien["facebook"] = "www.facebook.com";
+$julien["linkedin"] = "www.linkedin.com";
+$julien["twitter"] = "www.twitter.com";
+$julien["instagram"] = "www.facebook.com";
+
+
+
+// Defining single member
+$lucien["name"]["en"] = "Lucien Senez";
+$lucien["name"]["fr"] = "Lucien Senez";
+$lucien["title"]["en"] = "Business Development";
+$lucien["title"]["fr"] = "Représentant, Développement des Affaires";
+$lucien["image"]["url"] = "assets/images/profile/lucien.png";
+
+$lucien["infos"] = array();
+$lucien["infos"]["phone"] = "+1 (514) 242-8125";
+$lucien["infos"]["email"] = "lucien.senez@artbox.agency";
+
+$lucien["network"] = array();
+$lucien["facebook"] = "www.facebook.com";
+$lucien["linkedin"] = "www.linkedin.com";
+$lucien["twitter"] = "www.twitter.com";
+$lucien["instagram"] = "www.facebook.com";
+
+
+
+// Defining single member
+$antoine["name"]["en"] = "Antoine Fortin";
+$antoine["name"]["fr"] = "Antoine Fortin";
+$antoine["title"]["en"] = "IT Specialist and developper";
+$antoine["title"]["fr"] = "Spécialiste TI et développeur";
+$antoine["image"]["url"] = "assets/images/profile/antoine.png";
+
+$antoine["infos"] = array();
+$antoine["infos"]["phone"] = "+1 (438) 928-1516";
+$antoine["infos"]["email"] = "antoine.fortin@artbox.agency";
+
+$antoine["network"] = array();
+$antoine["facebook"] = "www.facebook.com";
+$antoine["linkedin"] = "www.linkedin.com";
+$antoine["twitter"] = "www.twitter.com";
+$antoine["instagram"] = "www.facebook.com";
+
+
+
+// Define all members for priting on template
+$contact["members"][] = $kath;
+$contact["members"][] = $phil;
+$contact["members"][] = $julie;
+$contact["members"][] = $catherine;
+$contact["members"][] = $julien;
+$contact["members"][] = $lucien;
+$contact["members"][] = $antoine;
+
+
 $main_page = array();
 $main_page["liner"]["fr"] = "Une agence de marketing social pour des pratiques marketing responsables";
 $main_page["liner"]["en"] = "A social marketing agency for responsible marketing practices";
+
 
 
 

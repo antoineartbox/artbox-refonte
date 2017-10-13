@@ -128,7 +128,8 @@ body.projects {
   body.projects #all-projects-thumbnail-container {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: wrap; }
     body.projects #all-projects-thumbnail-container .single-project-thumbnail-container {
       height: 450px;
       width: 250px;
@@ -252,32 +253,74 @@ body.single-project {
     body.single-project .vid-info .acronym {
       display: none; } }
 
+/*This file mixins for helping centering, disposing and placing elements*/
 body.about {
   background-color: #ffff00; }
-  body.about #team-members-container .single-member .image-member {
-    position: relative;
-    width: 251px;
-    height: 250px;
-    bottom: -20px;
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.95); }
-    body.about #team-members-container .single-member .image-member img {
-      position: absolute;
-      opacity: 0.35;
-      width: 250px;
-      border-radius: 100%;
-      transition: all 0.5s; }
-      body.about #team-members-container .single-member .image-member img:hover {
-        opacity: 1;
-        border-radius: 0%; }
-    body.about #team-members-container .single-member .image-member .member-name {
-      position: absolute;
-      text-align: center;
-      background-color: black;
-      color: yellow;
-      transition: margin-top 0.5s; }
-      body.about #team-members-container .single-member .image-member .member-name.active-name {
-        text-align: center;
-        background-color: black;
-        color: yellow;
-        margin-top: -20px; }
+  body.about #team-members-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    body.about #team-members-container .single-member {
+      margin-right: 40px; }
+      body.about #team-members-container .single-member .image-member {
+        position: relative;
+        width: 250px;
+        height: 250px;
+        bottom: -20px;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.95);
+        border-radius: 100%; }
+        body.about #team-members-container .single-member .image-member img {
+          position: absolute;
+          z-index: 3;
+          opacity: 0.35;
+          height: 250px;
+          width: 250px;
+          border-radius: 100%;
+          transition: all 0.5s; }
+          body.about #team-members-container .single-member .image-member img:hover {
+            opacity: 1;
+            border-radius: 0%; }
+        body.about #team-members-container .single-member .image-member .member-name {
+          position: absolute;
+          text-align: center;
+          background-color: black;
+          height: 0px;
+          color: yellow;
+          opacity: 0;
+          width: 0px;
+          transition: all 0.5s;
+          bottom: -40px; }
+          body.about #team-members-container .single-member .image-member .member-name.active-name {
+            width: 250px;
+            height: 30px;
+            opacity: 1;
+            text-align: center;
+            background-color: black;
+            color: yellow;
+            margin-top: -20px; }
+      body.about #team-members-container .single-member .infos-member {
+        margin-top: 45px;
+        /* General */ }
+        body.about #team-members-container .single-member .infos-member ul {
+          list-style: none; }
+        body.about #team-members-container .single-member .infos-member .member-contact-infos {
+          padding-left: 0; }
+        body.about #team-members-container .single-member .infos-member .social-networks {
+          width: 250px;
+          height: 100px;
+          text-align: center; }
+          body.about #team-members-container .single-member .infos-member .social-networks .member-social-network-list {
+            display: inline-block;
+            padding-left: 0px; }
+            body.about #team-members-container .single-member .infos-member .social-networks .member-social-network-list li {
+              padding: 0 5px;
+              text-align: center;
+              display: inline-block;
+              float: left; }
+              body.about #team-members-container .single-member .infos-member .social-networks .member-social-network-list li img {
+                transition: all 0.5s; }
+            body.about #team-members-container .single-member .infos-member .social-networks .member-social-network-list li:hover img {
+              border: solid white 4px;
+              border-radius: 100%; }

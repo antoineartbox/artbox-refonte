@@ -33,6 +33,8 @@ require "dictionnaries.php";
         </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Require libs -->
+        <script src="assets/js/librairies/anime.js"></script>
         <!-- Require our Js -->
         <script type="text/javascript" src="assets/js/main-ux-ui.js"></script>
 
