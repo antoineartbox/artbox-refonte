@@ -8,8 +8,16 @@ $(document).ready(function() {
         initResize();
     }
 
+    // Make text responsive
     $(".single-project-description").fitText(1.5, { minFontSize: '15px', maxFontSize: '24px'});
-    resizeText();
+
+    // Make the paragraph of project infos toggable
+    $(".project-infos h4").click(function() {
+        $(this).parent().find("p").slideToggle(500);
+    })
+
+
+
 });
 
 function initResize() {
@@ -31,6 +39,8 @@ function resizeText() {
 }
 
 
+
+// Function for text resizing
 (function( $ ){
 
   $.fn.fitText = function( kompressor, options ) {

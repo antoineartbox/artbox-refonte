@@ -161,8 +161,6 @@ body.single-project {
       font-size: 22px; }
   body.single-project #project-infos-container p {
     width: 75%; }
-  body.single-project #project-infos-container .project-infos {
-    overflow: hidden; }
   body.single-project #project-infos-container .project-infos.left {
     display: block;
     width: 100%;
@@ -186,10 +184,14 @@ body.single-project {
       font-size: 36px; }
       @media screen and (max-width: 480px) {
         body.single-project #project-infos-container .project-infos.left h4 {
-          background-color: #ffff00;
+          width: 100%;
           display: block;
           position: initial;
-          float: clear; } }
+          float: none; } }
+    @media screen and (max-width: 480px) {
+      body.single-project #project-infos-container .project-infos.left p {
+        display: none;
+        float: none; } }
   body.single-project #project-infos-container .project-infos.left:hover {
     left: 0%;
     background-color: yellow; }
@@ -214,11 +216,21 @@ body.single-project {
       font-size: 36px;
       width: 200px;
       text-align: center; }
+      @media screen and (max-width: 480px) {
+        body.single-project #project-infos-container .project-infos.right h4 {
+          width: 100%; } }
     body.single-project #project-infos-container .project-infos.right p {
       float: right; }
+      @media screen and (max-width: 480px) {
+        body.single-project #project-infos-container .project-infos.right p {
+          display: none;
+          float: none; } }
   body.single-project #project-infos-container .project-infos.right:hover {
     right: 0%;
     background-color: yellow; }
+  body.single-project #project-infos-container .project-infos {
+    display: none;
+    overflow: hidden; }
   body.single-project #project-infos-container .exception.deploy {
     margin-right: 40px; }
   body.single-project * {
