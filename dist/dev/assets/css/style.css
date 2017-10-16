@@ -142,12 +142,25 @@ body.projects {
       display: inline-block;
       margin-right: 45px;
       margin-top: 50px; }
+      @media screen and (max-width: 480px) {
+        body.projects #all-projects-thumbnail-container .single-project-thumbnail-container {
+          border-radius: 0px;
+          width: 100%;
+          display: block;
+          margin: 0; } }
       body.projects #all-projects-thumbnail-container .single-project-thumbnail-container .thumbnail-image {
         width: 250px;
         height: auto;
         opacity: 0.5;
         border-radius: 100%;
         transition: all 0.5s; }
+        @media screen and (max-width: 480px) {
+          body.projects #all-projects-thumbnail-container .single-project-thumbnail-container .thumbnail-image {
+            border-radius: 0px;
+            width: 100%;
+            display: block;
+            margin: 0;
+            opacity: 1; } }
         body.projects #all-projects-thumbnail-container .single-project-thumbnail-container .thumbnail-image:hover {
           border-radius: 0%;
           opacity: 1; }
@@ -169,7 +182,15 @@ body.projects {
           background-color: black;
           color: yellow;
           margin-top: -20px; }
+        @media screen and (max-width: 480px) {
+          body.projects #all-projects-thumbnail-container .single-project-thumbnail-container .project-infos {
+            position: inherit;
+            display: block;
+            height: 45px;
+            width: 100%;
+            opacity: 1; } }
         body.projects #all-projects-thumbnail-container .single-project-thumbnail-container .project-infos .project-title {
+          margin-top: 0px;
           padding: 2px;
           margin-bottom: 10px; }
 

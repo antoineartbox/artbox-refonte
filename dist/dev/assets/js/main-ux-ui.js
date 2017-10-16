@@ -69,12 +69,16 @@ $(document).ready(function() {
 
 
     // Handle all projects image name display
-    $(".single-project-thumbnail-container").mouseover(function() {
-        $(this).find(".project-infos").addClass("active-project-infos");
-        $(this).mouseleave(function() {
-            $(this).find(".project-infos").removeClass("active-project-infos");
+    // But before check if NOT IN mobile
+    if(!window.innerWidth > 480) {
+        $(".single-project-thumbnail-container").mouseover(function() {
+            $(this).find(".project-infos").addClass("active-project-infos");
+            $(this).mouseleave(function() {
+                $(this).find(".project-infos").removeClass("active-project-infos");
+            });
         });
-    });
+    }
+
 
 
 
