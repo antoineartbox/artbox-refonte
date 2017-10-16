@@ -40,6 +40,7 @@ canvas {
   top: 0px;
   right: 0px; }
   #menu-container .menu-hamburger {
+    cursor: pointer;
     right: 25px;
     position: absolute; }
     #menu-container .menu-hamburger .slice1,
@@ -67,6 +68,7 @@ canvas {
       z-index: 55;
       border-left: solid black 3px; }
     #menu-container #menu .close-button {
+      cursor: pointer;
       position: absolute;
       right: 15px;
       font-size: 35px; }
@@ -133,16 +135,43 @@ body.projects {
     align-items: center;
     flex-wrap: wrap; }
     body.projects #all-projects-thumbnail-container .single-project-thumbnail-container {
-      height: 450px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 100%;
+      position: relative;
       width: 250px;
       display: inline-block;
-      margin-right: 45px; }
+      margin-right: 45px;
+      margin-top: 50px; }
       body.projects #all-projects-thumbnail-container .single-project-thumbnail-container .thumbnail-image {
         width: 250px;
-        height: auto; }
-      body.projects #all-projects-thumbnail-container .single-project-thumbnail-container .project-title {
-        font-weight: bold;
-        font-size: 36px; }
+        height: auto;
+        opacity: 0.5;
+        border-radius: 100%;
+        transition: all 0.5s; }
+        body.projects #all-projects-thumbnail-container .single-project-thumbnail-container .thumbnail-image:hover {
+          border-radius: 0%;
+          opacity: 1; }
+      body.projects #all-projects-thumbnail-container .single-project-thumbnail-container .project-infos {
+        position: absolute;
+        text-align: center;
+        background-color: black;
+        height: 0px;
+        color: yellow;
+        opacity: 0;
+        width: 0px;
+        transition: all 0.5s;
+        bottom: -40px; }
+        body.projects #all-projects-thumbnail-container .single-project-thumbnail-container .project-infos.active-project-infos {
+          width: 100%;
+          height: 50px;
+          opacity: 1;
+          text-align: center;
+          background-color: black;
+          color: yellow;
+          margin-top: -20px; }
+        body.projects #all-projects-thumbnail-container .single-project-thumbnail-container .project-infos .project-title {
+          padding: 2px;
+          margin-bottom: 10px; }
 
 body.single-project {
   overflow: hidden; }

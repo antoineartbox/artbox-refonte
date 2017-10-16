@@ -5,10 +5,13 @@
     <div id="all-projects-thumbnail-container">
         <!-- Render all project thumbnails refers to dictionnaries.php on root for array structure -->
         <?php foreach($projects["single_projects"] as $key => $project) { ?>
-            <div class="single-project-thumbnail-container">
+            <a class="thumbnail-link-wrapper" href="<?=  $project["thumbnail"]["more-infos-link"][$locale]; ?>">
+                <div class="single-project-thumbnail-container">
                 <img class="thumbnail-image" src="<?= $project['thumbnail']['thumbnail-image-url'][$locale] ?>" alt="">
-                <h3 class="project-title"><?= $project["thumbnail"]["title"][$locale]; ?></h3>
-                <h4 class="project-link"><a href='<?= $project["thumbnail"]["more-infos-link"][$locale];  ?>'>Click here for more</a></h4>
+                <div class="project-infos">
+                    <h4 class="project-title"><?= $project["thumbnail"]["title"][$locale]; ?></h4>
+                </div>
+            </a>
             </div>
         <?php } ?>
     </div>
