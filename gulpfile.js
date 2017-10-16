@@ -2,6 +2,8 @@
 var gulp = require('gulp');
     watch = require('gulp-watch');
     concat = require('gulp-concat');
+    image = require('gulp-image');
+
 
 // Include plugins
 var plugins = require('gulp-load-plugins')(); // tous les plugins de package.json
@@ -33,6 +35,17 @@ gulp.task('minify', function () {
     .pipe(gulp.dest(destination + '/assets/css/'));
 });
 
+// Image building
+var devImagePath =  "dist/dev/assets/images/**/*";
+var imagePath =  "dist/assets/images";
+gulp.task('image', function () {
+  gulp.src(devImagePath)
+    .pipe(image())
+    .pipe(gulp.dest(imagePath));
+});
+
+gulp.task('default', ['image']);
+
 // Tâche "build"
 gulp.task('build', ['sass']);
 
@@ -42,7 +55,7 @@ gulp.task('prod', ['build',  'minify']);
 // Tâche par défaut
 gulp.task('default', ['build']);
 
-// Watch 
+// Watch
 gulp.task('watch', function () {
   gulp.watch(source + '/assets/css/**/*.scss', ['build']);
 });
