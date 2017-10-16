@@ -74,6 +74,15 @@ canvas {
       font-size: 35px; }
     #menu-container #menu nav {
       padding-top: 80px; }
+      #menu-container #menu nav .translation-box {
+        font-size: 35px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        display: inline-block;
+        color: black; }
+        #menu-container #menu nav .translation-box:hover, #menu-container #menu nav .translation-box:active {
+          text-decoration: none; }
       #menu-container #menu nav ul {
         list-style: none; }
         #menu-container #menu nav ul li {

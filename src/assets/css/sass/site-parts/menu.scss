@@ -1,3 +1,4 @@
+@import "../general/fonts.scss";
 #menu-container {
     position: relative;
     z-index: 50;
@@ -45,7 +46,23 @@
             font-size:35px;
         }
         nav{
+
             padding-top: 80px;
+            .translation-box {
+                font-size:35px;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                display: inline-block;
+                color: black;
+
+                // Kill hover and active underline
+                &:hover,
+                &:active {
+                    text-decoration: none;
+
+                }
+            }
             ul {
                 list-style: none;
                 li {

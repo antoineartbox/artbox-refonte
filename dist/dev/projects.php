@@ -26,7 +26,7 @@ require "dictionnaries.php";
     <body class="projects">
 
         <header>
-            
+
         </header>
         <main>
             <?php require "site-parts/projects/projects.php"; ?>

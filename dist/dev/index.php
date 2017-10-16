@@ -30,7 +30,7 @@ error_reporting(E_ALL);
     <body>
         <canvas></canvas>
         <header>
-
+            
             <?php require "site-parts/header/header.php"; ?>
         </header>
         <main>
