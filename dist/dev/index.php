@@ -27,10 +27,10 @@ error_reporting(E_ALL);
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
-    <body>
+    <body class="front-page">
         <canvas></canvas>
         <header>
-            
+
             <?php require "site-parts/header/header.php"; ?>
         </header>
         <main>

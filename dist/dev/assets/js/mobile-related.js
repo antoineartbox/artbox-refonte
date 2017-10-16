@@ -10,7 +10,7 @@ $(document).ready(function() {
 
     // Make text responsive
     $(".single-project-description").fitText(1.5, { minFontSize: '15px', maxFontSize: '24px'});
-
+    $(".header-description p").fitText(1.5, { minFontSize: '15px', maxFontSize: '24px'});
     // Make the paragraph of project infos toggable
     $(".project-infos h4").click(function() {
         $(this).parent().find("p").slideToggle(500);

@@ -1,4 +1,10 @@
-.message-container {
+body main {
+  padding-top: 80px; }
+
+body.front-page .main-header-infos {
+  display: none; }
+
+body.front-page .message-container {
   position: absolute;
   z-index: 2;
   margin: 0 auto;
@@ -7,23 +13,23 @@
   /*Translating for real center*/
   transform: translate(-50%, -50%); }
 
-.home-page-logo {
+body.front-page .home-page-logo {
   width: 400px;
   height: auto; }
 
-canvas {
+body.front-page canvas {
   position: absolute; }
 
-.text-container {
+body.front-page .text-container {
   height: 0px;
   text-align: center; }
 
-.text-container h2 {
+body.front-page .text-container h2 {
   height: 0px;
   text-align: center;
   margin: 0; }
 
-.credit {
+body.front-page .credit {
   width: 100%;
   display: block;
   text-align: center;
@@ -31,7 +37,7 @@ canvas {
   bottom: 0;
   margin: 0 auto; }
 
-.credit i {
+body.front-page .credit i {
   color: black; }
 
 #menu-container {
@@ -101,6 +107,23 @@ canvas {
                 border: solid black 1px;
                 margin: 0 auto; }
 
+header .main-header-infos {
+  margin: 0px;
+  position: absolute; }
+  header .main-header-infos img {
+    width: 200px; }
+
+footer .credit {
+  width: 100%;
+  display: block;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto; }
+
+footer .credit i {
+  color: black; }
+
 footer .credit {
   padding-top: 25px; }
   footer .credit a:hover {
@@ -136,6 +159,7 @@ body.services {
 body.projects {
   background-color: #ffff00; }
   body.projects h2 {
+    margin: 0px;
     font-size: 48px;
     text-transform: uppercase; }
   body.projects #all-projects-thumbnail-container {

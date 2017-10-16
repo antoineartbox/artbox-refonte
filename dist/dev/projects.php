@@ -26,14 +26,14 @@ require "dictionnaries.php";
     <body class="projects">
 
         <header>
-
+            <?php require "site-parts/header/header.php"; ?>
         </header>
         <main>
             <?php require "site-parts/projects/projects.php"; ?>
         </main>
         <footer>
 
-
+            <?php require "site-parts/footer/footer.php"; ?>
         </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

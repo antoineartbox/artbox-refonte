@@ -5,6 +5,7 @@
 body.projects {
 
     h2 {
+        margin:0px;
         @include font-page-title;
     }
     background-color: $mainYellow;

@@ -4,10 +4,12 @@
 // Import general sass files
 @import "general/colors.scss";
 @import "general/fonts.scss";
+@import "general/general-design.scss";
 
 // Import sites parts
 @import "site-parts/front-page.scss";
 @import "site-parts/menu.scss";
+@import "site-parts/header.scss";
 @import "site-parts/footer.scss";
 @import "site-parts/services.scss";
 @import "site-parts/projects.scss";

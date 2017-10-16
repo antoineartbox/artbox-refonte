@@ -1,4 +1,15 @@
 footer {
+
+    .credit {width: 100%;
+            display: block;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            margin: 0 auto;
+        }
+    .credit i {
+        color: black;
+    }
     .credit {
         padding-top: 25px;
         a {
