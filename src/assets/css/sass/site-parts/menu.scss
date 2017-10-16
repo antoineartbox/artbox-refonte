@@ -19,16 +19,20 @@
     #menu {
         overflow: hidden;
         position: absolute;
+        width: 0px;
+        right: 0px;
+        top: 0px;
         // Add class for k illing display
         &.kill-menu-display {
-            width: 0px;
+            transition: all 0.5s;
+
         }
         &.active-menu-display {
             transition: all 0.5s;
             position: absolute;
             right: 0px;
             top: 0px;
-            background-color: white;
+            background-color:  $mainYellow;
             height:100vh;
             width: 350px;
             z-index: 55;
