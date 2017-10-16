@@ -12,21 +12,81 @@ body.projects {
 
         @include wrap-all-childs;
         .single-project-thumbnail-container {
-            height: 450px;
+            background-color: rgba(0,0,0,0.5);
+            border-radius: 100%;
+            position: relative;
             width: 250px;
             display: inline-block;
             margin-right: 45px;
+            margin-top: 50px;
+
+            // Responsive
+            @media screen and (max-width: 480px) {
+                border-radius:0px;
+                width: 100%;
+                display: block;
+                margin:0;
+            }
+
             .thumbnail-image {
+
                 width: 250px;
                 height: auto;
+                opacity: 0.5;
+                // For hover effects
+                border-radius:100%;
+                transition: all 0.5s;
+                // Responsive
+                @media screen and (max-width: 480px) {
+                    border-radius:0px;
+                    width: 100%;
+                    display: block;
+                    margin:0;
+                    opacity:1;
+                }
+                &:hover {
+                    border-radius:0%;
+                    opacity:1;
+                }
             }
 
-            .project-title {
-                @include font-page-medium-content;
-            }
+            .project-infos {
+                position: absolute;
+                text-align: center;
+                background-color: black;
+                height:0px;
+                color: yellow;
+                opacity: 0;
+                width: 0px;
+                transition:  all 0.5s;
+                bottom: -40px;
+                &.active-project-infos {
+                    width: 100%;
+                    height:50px;
+                    opacity: 1;
+                    text-align: center;
+                    background-color: black;
+                    color: yellow;
+                    margin-top:-20px;
+                }
+                // Responsive
+                @media screen and (max-width: 480px) {
+                    position: inherit;
+                    display: block;
+                    height: 45px;
+                    width: 100%;
+                    opacity: 1;
 
-            .project-link {
+                }
+                .project-title {
+                    margin-top: 0px;
+                    padding: 2px;
+                    margin-bottom:10px;
+                }
 
+                .project-link {
+
+                }
             }
         }
     }

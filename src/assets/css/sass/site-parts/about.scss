@@ -44,7 +44,6 @@ body.about {
                     color: yellow;
                     opacity: 0;
                     width: 0px;
-                    // Bug on the transition needs to specify all properties independently
                     transition:  all 0.5s;
                     bottom: -40px;
                     &.active-name {

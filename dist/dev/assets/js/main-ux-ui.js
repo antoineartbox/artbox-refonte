@@ -70,7 +70,7 @@ $(document).ready(function() {
 
     // Handle all projects image name display
     // But before check if NOT IN mobile
-    if(!window.innerWidth > 480) {
+    if(window.innerWidth > 480) {
         $(".single-project-thumbnail-container").mouseover(function() {
             $(this).find(".project-infos").addClass("active-project-infos");
             $(this).mouseleave(function() {
