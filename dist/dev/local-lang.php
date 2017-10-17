@@ -5,7 +5,7 @@ session_start();
 // Set default session locale value to english
 if(!isset($_SESSION["locale"])) {
     $locale = "en";
-
+    $_SESSION["locale"] = "en";
 }
 
 // Check if a translation is request through URL

@@ -12,13 +12,13 @@ $menu["items"]["fr"]['Services'] = "services.php";
 $menu["items"]["fr"]['Projets'] = "projects.php";
 $menu["items"]["fr"]['À propos'] = "about.php";
 $menu["items"]["fr"]['Contact'] = "contact.php";
-$menu["items"]["fr"]['Service'] = "home.php";
+
 // English menu
 $menu["items"]["en"]['Services'] = "services.php";
 $menu["items"]["en"]['Projects'] = "projects.php";
 $menu["items"]["en"]['About'] = "about.php";
 $menu["items"]["en"]['Contact'] = "contact.php";
-$menu["items"]["en"]['Home'] = "home.php";
+
 
 // Services
 $services["title"]["fr"] = "Notre modèle";
