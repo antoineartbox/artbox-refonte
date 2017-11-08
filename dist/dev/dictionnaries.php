@@ -230,7 +230,7 @@ $julien["linkedin"] = "www.linkedin.com";
 $julien["twitter"] = "www.twitter.com";
 $julien["instagram"] = "www.facebook.com";
 
-
+/*
 
 // Defining single member
 $lucien["name"]["en"] = "Lucien Senez";
@@ -248,7 +248,7 @@ $lucien["facebook"] = "www.facebook.com";
 $lucien["linkedin"] = "www.linkedin.com";
 $lucien["twitter"] = "www.twitter.com";
 $lucien["instagram"] = "www.facebook.com";
-
+*/
 
 
 // Defining single member
