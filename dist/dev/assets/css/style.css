@@ -1,6 +1,12 @@
 body main {
   padding-top: 80px; }
 
+body.front-page #particles-js {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: yellow; }
+
 body.front-page .main-header-infos {
   display: none; }
 

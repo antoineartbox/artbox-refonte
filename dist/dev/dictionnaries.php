@@ -276,7 +276,6 @@ $contact["members"][] = $phil;
 $contact["members"][] = $julie;
 $contact["members"][] = $catherine;
 $contact["members"][] = $julien;
-$contact["members"][] = $lucien;
 $contact["members"][] = $antoine;
 
 

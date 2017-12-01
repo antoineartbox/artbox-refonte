@@ -28,7 +28,7 @@ error_reporting(E_ALL);
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body class="front-page">
-        <canvas></canvas>
+		<div id="particles-js"></div>
         <header>
 
             <?php require "site-parts/header/header.php"; ?>
@@ -43,8 +43,15 @@ error_reporting(E_ALL);
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- Require our Js -->
-        <script type="text/javascript" src="assets/js/canvas.js"></script>
-        <script type="text/javascript" src="assets/js/main-ux-ui.js"></script>
+		<script type="text/javascript" src="assets/js/main-ux-ui.js"></script>
+        <script type="text/javascript" src="assets/js/librairies/particles.js"></script>
+		<script type="text/javascript" src="assets/js/particles-behave.js"></script>
+		<!-- Particles -->
+		<script>
+			particlesJS.load('particles-js', 'assets/particles.json', function() {
+				console.log('callback - particles.js config loaded');
+			});
+		</script>
 
     </body>
 </html>
